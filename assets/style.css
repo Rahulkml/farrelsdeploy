@@ -552,7 +552,7 @@ html {
     }
 }
 
-/* Footer Styling */
+/* `er Styling */
 .footer {
     background-color: #333;
     color: #fff;
@@ -626,6 +626,41 @@ html {
 .social-icon:hover {
     color: #fff;
     text-decoration: none;
+}
+
+/* Footer Copyright - Bottom Center Alignment */
+.footer-copyright {
+    width: 100%; /* Ensure it spans the full width */
+    text-align: center; /* Center-align the text */
+    margin-top: 20px; /* Add space between this and the main footer content */
+    font-size: 0.9em;
+    color: #fff; /* Matches the footer text color */
+}
+
+.footer-copyright .footer-divider {
+    margin: 0 10px; /* Space around the divider */
+    color: #e67e22; /* Accent color */
+}
+
+.footer-copyright .footer-link {
+    color: #e67e22; /* Accent color for the "Designed by" link */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-copyright .footer-link:hover {
+    color: #fff; /* Changes to white on hover */
+}
+
+/* Ensure it stays at the bottom in responsive layouts */
+.footer {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center-align all footer content */
+}
+
+.footer-content {
+    margin-bottom: 20px; /* Add space above the copyright section */
 }
 
 /* Responsive Footer */
