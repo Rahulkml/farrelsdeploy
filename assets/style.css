@@ -64,7 +64,7 @@ html {
 }
 
 .hamburger {
-    position: absolute;
+    position: fixed;
     top: 15px;
     right: 15px;
     z-index: 1001;
@@ -92,9 +92,9 @@ html {
 }
 
 /* Side Menu Styling */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .menu-links {
-        /* Side menu styles from previous code */
+        
         position: fixed;
         top: 0;
         right: 0;
@@ -109,6 +109,7 @@ html {
         transform: translateX(100%); /* Initially hidden */
         transition: transform 0.3s ease;
         z-index: 1000;
+        
     }
 
     .menu-links a {
@@ -129,6 +130,7 @@ html {
         height: 3px;
         background-color: #333;
         transition: all 0.3s ease;
+        margin-left: 0px;
     }
 
 }
@@ -195,6 +197,32 @@ html {
     transform: scale(1.1px);
 }
 
+@media (max-width: 1024px) {
+    .main {
+        max-width: 100vw;
+        
+    }
+    .main img {
+        width: 50%;
+        padding: 5%;
+        padding-bottom: 0%;
+    }
+
+    .intro {
+        width: 50%;
+        padding: 5%;
+        padding-top: 0%;
+    }
+
+    .intro h1 {
+        font-size: 1.8em;
+    }
+
+    .intro p {
+        font-size: 1em;
+    }
+}
+
 @media (max-width: 768px) {
     .main {
         background-image: url('img/bg-portrait.png');
@@ -205,13 +233,14 @@ html {
 
     .main img {
         width: 100%;
-        margin-top: 20%;
+        margin-top: 60%;
         padding: 5%;
     }
 
     .intro {
         width: 100%;
         padding: 5%;
+        padding-top: 0%;
     }
 
     .intro h1 {
@@ -241,6 +270,7 @@ html {
     width: 100%;
     border: 3px solid #fff;
     padding: 5%;
+    border-radius: 10px;
 }
 
 .why {
@@ -555,6 +585,7 @@ html {
 /* `er Styling */
 .footer {
     background-color: #333;
+    width: 100%;
     color: #fff;
     padding: 40px 20px;
     display: flex;
@@ -700,12 +731,17 @@ html {
 }
 
 .small-box {
-    width: 40%;
+    width: 50%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: flex-end;
     text-align: justify;
     margin-right: 5%;
+}
+
+.para-box {
+    width: 85%;
 }
 
 .link-button {
@@ -760,17 +796,25 @@ html {
 @media (max-width: 768px) {
     .about {
         background-image: url('img/aboutp.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
         align-items: center; /* Centers content on smaller screens */
         text-align: center;
     }
 
     .small-box {
         width: 100%;
-        margin-top: 60%;
+        margin-top: 120%;
+        text-align: justify;
+    }
+
+    .para-box {
+        width: 100%;
     }
 
     .about h1 {
-        font-size: 4em;
+        font-size: 3.5em;
     }
 
     .social-icons-about {
