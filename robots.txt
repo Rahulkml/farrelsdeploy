@@ -1,0 +1,13 @@
+# robots.txt for farrells.in
+
+User-agent: *
+Disallow: /admin/
+Disallow: /cgi-bin/
+Disallow: /scripts/
+Disallow: /private/
+Disallow: /tmp/
+Allow: /
+
+# Allow sitemap access
+Sitemap: https://www.farrells.in/sitemap.xml
+obots.txt
